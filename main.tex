@@ -1,0 +1,149 @@
+\documentclass[aspectratio=149]{beamer}
+\usepackage[utf8]{inputenc}
+
+\setbeamersize{text margin left=3mm,text margin right=3mm} 
+
+\usetheme{Oxygen}
+\usepackage{graphicx}
+\usepackage{hyperref}
+%\usepackage{movie15}
+\usepackage{textpos}
+\usepackage{fancybox}
+\usepackage{colortbl}
+\usepackage{rotating}
+%\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts,amsbsy,dsfont}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{array}
+%\usepackage[caption=false]{subfig}
+\usepackage{arydshln}
+
+
+\newcommand{\x}{\negthinspace\times\negthinspace}
+\usepackage{etoolbox}
+
+\usepackage[nopar]{lipsum} 
+
+\newif\ifcomment
+\newcommand{\Com}{\par\footnotesize\itshape\commenttrue}
+
+\newenvironment{Itemize}
+ {%
+  \edef\Itemizecurrent{\the\font}%
+  \itemize
+  \preto{\item}{\ifcomment\par\Itemizecurrent\fi}%
+ }{%
+  \enditemize
+ }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%
+
+
+\title[A Deep Learning Approach for Image-based Semantic Segmentation with Preserved Interpretability]{A Deep Learning Approach for Image-based Semantic Segmentation with Preserved Interpretability}
+\author{\normalsize{Juan Carlos Aguirre Arango}\\ \scriptsize{jucaguirrear@unal.edu.co}}
+\institute{\includegraphics[width=0.15\textwidth]{EscudoUN.png}\\\footnotesize{
+Universidad Nacional de Colombia \\ Signal Processing and Recognition Group - SPRG
+\\
+Advisor: Andrés Marino Álvarez Meza, Ph.D.\\
+
+}}
+\date[]{\scriptsize{\today}}
+%%-------------------------------------------------------------------
+%% Options
+%%-------------------------------------------------------------------
+\setbeamercovered{dynamic}
+\setbeamertemplate{navigation symbols}{}
+
+
+
+\begin{document}
+
+{\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+\begin{frame}{}
+\vspace{-0.65cm}
+    \titlepage 
+\end{frame}
+}
+
+
+\frame
+{ \frametitle{Outline}
+{\small 
+  \tableofcontents[]}
+}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section[Motivation]{Motivation}
+
+\begin{frame}{Frame Title}
+    \lipsum
+\end{frame}
+
+
+
+\section{Problem Statement}
+
+\begin{frame}{Title}
+    \lipsum
+\end{frame}
+
+\section{State of the Art}
+
+\section{Aims}
+
+
+\section{Methodology}
+
+\section{Experimental Set-up}
+
+\section{Comparative Results}
+
+\section{Conclusions}
+
+\section{References}
+
+
+
+\begin{frame}{}
+
+\begin{center}
+	{\Huge{\textbf{\textcolor[rgb]{0.00,0.00,1.00}{Thank you!}}}}\\
+	\vspace{0.1cm}
+	 Juan Carlos Aguirre Arango\\ \scriptsize{jucaguirrear@unal.edu.co}
+\end{center}    
+    
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]
+\frametitle{References}
+{\tiny 
+\bibliographystyle{apalike}
+\bibliography{References}
+}
+\end{frame}
+
+
+
+
+\end{document}
+
