@@ -920,6 +920,9 @@ keywords = {Explainable artificial intelligence, Trustworthy artificial intellig
 abstract = {Artificial intelligence (AI) has huge potential to improve the health and well-being of people, but adoption in clinical practice is still limited. Lack of transparency is identified as one of the main barriers to implementation, as clinicians should be confident the AI system can be trusted. Explainable AI has the potential to overcome this issue and can be a step towards trustworthy AI. In this paper we review the recent literature to provide guidance to researchers and practitioners on the design of explainable AI systems for the health-care domain and contribute to formalization of the field of explainable AI. We argue the reason to demand explainability determines what should be explained as this determines the relative importance of the properties of explainability (i.e. interpretability and fidelity). Based on this, we propose a framework to guide the choice between classes of explainable AI methods (explainable modelling versus post-hoc explanation; model-based, attribution-based, or example-based explanations; global and local explanations). Furthermore, we find that quantitative evaluation metrics, which are important for objective standardized evaluation, are still lacking for some properties (e.g. clarity) and types of explanations (e.g. example-based methods). We conclude that explainable modelling can contribute to trustworthy AI, but the benefits of explainability still need to be proven in practice and complementary measures might be needed to create trustworthy AI in health care (e.g. reporting data quality, performing extensive (external) validation, and regulation).}
 }
 
+
+
+
 @article{kolyshkina2021interpretability,
   title={Interpretability of machine learning solutions in public healthcare: The CRISP-ML approach},
   author={Kolyshkina, Inna and Simoff, Simeon},
@@ -1619,13 +1622,73 @@ DA = {2023-04-13},
 
 
 @article{Ibtehaz_2020,
-	doi = {10.1016/j.neunet.2019.08.025},
-	url = {https://doi.org/10.1016\%2Fj.neunet.2019.08.025},
-	year = 2020,
-	month = {jan},
-	publisher = {Elsevier BV}
+   title={MultiResUNet: Rethinking the U-Net architecture for multimodal biomedical image segmentation},
+   volume={121},
+   ISSN={0893-6080},
+   url={http://dx.doi.org/10.1016/j.neunet.2019.08.025},
+   DOI={10.1016/j.neunet.2019.08.025},
+   journal={Neural Networks},
+   publisher={Elsevier BV},
+   author={Ibtehaz, Nabil and Rahman, M. Sohel},
+   year={2020},
+   month={Jan},
+   pages={74–87}
 }
 
+@misc{nakkiran2019deep,
+      title={Deep Double Descent: Where Bigger Models and More Data Hurt}, 
+      author={Preetum Nakkiran and Gal Kaplun and Yamini Bansal and Tristan Yang and Boaz Barak and Ilya Sutskever},
+      year={2019},
+      eprint={1912.02292},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@misc{sutherland2015error,
+      title={On the Error of Random Fourier Features}, 
+      author={Danica J. Sutherland and Jeff Schneider},
+      year={2015},
+      eprint={1506.02785},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@article{YEUNG2022102026,
+title = {Unified Focal loss: Generalising Dice and cross entropy-based losses to handle class imbalanced medical image segmentation},
+journal = {Computerized Medical Imaging and Graphics},
+volume = {95},
+pages = {102026},
+year = {2022},
+issn = {0895-6111},
+doi = {https://doi.org/10.1016/j.compmedimag.2021.102026},
+url = {https://www.sciencedirect.com/science/article/pii/S0895611121001750},
+author = {Michael Yeung and Evis Sala and Carola-Bibiane Schönlieb and Leonardo Rundo},
+keywords = {Loss function, Class imbalance, Machine learning, Convolutional neural networks, Medical image segmentation},
+abstract = {Automatic segmentation methods are an important advancement in medical image analysis. Machine learning techniques, and deep neural networks in particular, are the state-of-the-art for most medical image segmentation tasks. Issues with class imbalance pose a significant challenge in medical datasets, with lesions often occupying a considerably smaller volume relative to the background. Loss functions used in the training of deep learning algorithms differ in their robustness to class imbalance, with direct consequences for model convergence. The most commonly used loss functions for segmentation are based on either the cross entropy loss, Dice loss or a combination of the two. We propose the Unified Focal loss, a new hierarchical framework that generalises Dice and cross entropy-based losses for handling class imbalance. We evaluate our proposed loss function on five publicly available, class imbalanced medical imaging datasets: CVC-ClinicDB, Digital Retinal Images for Vessel Extraction (DRIVE), Breast Ultrasound 2017 (BUS2017), Brain Tumour Segmentation 2020 (BraTS20) and Kidney Tumour Segmentation 2019 (KiTS19). We compare our loss function performance against six Dice or cross entropy-based loss functions, across 2D binary, 3D binary and 3D multiclass segmentation tasks, demonstrating that our proposed loss function is robust to class imbalance and consistently outperforms the other loss functions. Source code is available at: https://github.com/mlyg/unified-focal-loss.}
+}
+
+@article{BOUVET202053,
+title = {Infrared thermography to assess dermatomal levels of labor epidural analgesia with 1 mg/mL ropivacaine plus 0.5 µg/mL sufentanil: a prospective cohort study},
+journal = {International Journal of Obstetric Anesthesia},
+volume = {41},
+pages = {53-58},
+year = {2020},
+issn = {0959-289X},
+doi = {https://doi.org/10.1016/j.ijoa.2019.08.006},
+url = {https://www.sciencedirect.com/science/article/pii/S0959289X19305291},
+author = {L. Bouvet and M. Roukhomovsky and F.-P. Desgranges and B. Allaouchiche and D. Chassard},
+keywords = {Thermography, Epidural analgesia, Obstetric analgesia},
+abstract = {Background
+Assessment of the effectiveness of obstetric epidural analgesia may be difficult and techniques for objective assessment of epidural spread of local anesthetic would be useful. In this prospective cohort study we assessed whether obstetric epidural analgesia from a low concentration of ropivacaine led to significant change in cutaneous temperature, related to sympathetic block detected by infrared thermography, at dermatomes C4, T4, T10, L2 and L5.
+Methods
+Women in spontaneous labor who requested epidural analgesia were consecutively recruited. Epidural analgesia was induced with a bolus of 10–15 mL of ropivacaine 1 mg/mL and sufentanil 0.5 µg/mL, followed by continuous epidural infusion. Skin temperature was measured using thermography before and 20 min after the epidural bolus. The verbal pain score using a numeric rating scale was recorded before and 60 min after the epidural bolus. The upper sensory block to cold sensation was tested 30 and 60 min after the bolus by a physician blinded to the skin temperature. Failed epidural analgesia was defined as verbal pain score >3 at 60 min.
+Results
+Fifty-three parturients were included and analyzed. We found a significant increase in skin temperatures measured at T4, T10, L2 and L5 dermatomes, but not at C4, and a significant difference in the change in skin temperature at T10 between failed (n=3) and successful (n=50) epidural analgesia.
+Conclusions
+These results suggest that infrared thermography might be useful for the early diagnosis of successful obstetric epidural analgesia.}
+}
 
 
 @inproceedings{Chen2020UNetAD,
